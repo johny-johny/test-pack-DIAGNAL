@@ -1,38 +1,117 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  border: none;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body,
+#root {
+  display: block;
+  background-color: black;
+  color: #fff;
+}
+
+#root .titleList {
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#root .titleList li {
+  display: inline-block;
+  width: 31%;
+  margin: 1%;
+  margin-bottom: 0;
+  text-align: center;
+  height: 110px;
+  float: none;
+}
+form {
+  padding: 5px 3px;
+}
+input {
+  background: none;
+  color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  float: left;
+}
+.search-btn {
+  box-shadow: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  float: right;
+  background: black;
+  padding: 0px;
+  width: auto;
+}
+.search-btn img {
+  width: 25px;
+  height: 25px;
+}
+#root .titleList li img {
+  display: block;
+  margin-bottom: 3px;
+  border: 1px solid rgba(225, 225, 225, 0.6);
+}
+
+@media only screen and (min-device-width: 250px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .container {
+    border: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  body,
+  #root {
+    display: block;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
   }
-  to {
-    transform: rotate(360deg);
+
+  #root .titleList {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  #root .titleList li {
+    display: inline-block;
+    width: 31%;
+    margin: 1%;
+    margin-bottom: 0;
+    text-align: center;
+    height: 110px;
+    float: none;
+  }
+  form {
+    padding: 5px 3px;
+  }
+  input {
+    background: none;
+    color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    float: left;
+  }
+  .search-btn {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    float: right;
+    background: black;
+    padding: 0px;
+    width: auto;
+  }
+  .search-btn img {
+    width: 25px;
+    height: 25px;
+  }
+  #root .titleList li img {
+    display: block;
+    margin-bottom: 3px;
+    border: 1px solid rgba(225, 225, 225, 0.6);
   }
 }
